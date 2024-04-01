@@ -1,0 +1,14 @@
+<!-- user-list.component.html -->
+
+<div class="user-list-container">
+    <h2>User List</h2>
+    <select class="form-select">
+      <option *ngFor="let user of users">{{ user.name }}</option>
+    </select>
+  
+    <div class="message-input">
+      <textarea [(ngModel)]="message" placeholder="Type your message..."></textarea>
+      <button (click)="sendMessage()">Send</button>
+    </div>
+  </div>
+  
